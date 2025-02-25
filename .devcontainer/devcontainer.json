@@ -1,0 +1,21 @@
+{
+    "name": "Python Dev Container",
+    "image": "dev:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-vscode-remote.remote-containers",
+                "formulahendry.code-runner",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "runArgs": [
+        "--gpus", "all",
+        "--env", "DISPLAY",                 
+        "--volume", "/tmp/.X11-unix:/tmp/.X11-unix:rw"],
+    "containerEnv": {
+        "XDG_RUNTIME_DIR": "/tmp/runtime-root"
+  } 
+}

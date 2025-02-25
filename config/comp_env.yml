@@ -1,0 +1,35 @@
+name: comp
+
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+  - anaconda
+
+dependencies: 
+  - python=3.8
+  - h5py
+  - pandas
+  - openpyxl
+  - xlsxwriter
+  - numpy
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - scikit-learn
+  - scikit-posthocs
+  - pysindy
+  - umap-learn
+  - networkx
+  - nibabel
+  - matplotlib
+  - seaborn
+  - pyvis
+  - jupyterlab
+  - ipykernel
+  - pip:
+    - torchviz
+ 
+
